@@ -18,7 +18,8 @@ namespace Videojuego
             { 
                 int ataque = ElegirAtaque_Heroe();
                 villano.RestarVida(ataque);
-                heroe.AumentarVida(CalcularBonusVida(ataque));                
+                heroe.AumentarVida(CalcularBonusVida(ataque));              
+                  
                 ataque = ElegirAtaque_Villano();
                 heroe.RestarVida(ataque);
                 Console.WriteLine("Tu vida es: " + heroe.Vida1);
